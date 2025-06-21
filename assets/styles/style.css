@@ -1,0 +1,92 @@
+* {
+    font-size: 14px;
+}
+.logo_clarin {
+    width: 120px;
+    height: 30px;
+    display: grid;
+}
+.grid {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: rgb(65, 64, 64);
+}
+.img_diariodeldia {
+    width: 200px;
+    height: 300px;
+}
+a {
+    text-decoration: none;
+    color: rgb(65, 64, 64);
+}
+.boton_lee_diario {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(88, 85, 85);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.iconos_footer {
+    width: 1500px;
+    height: 100px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    cursor: pointer;
+
+}
+.tyc_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    cursor: pointer;
+}
+#span {
+    text-decoration: underline !important;
+}
+.inf_fiscal {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/***** TABLET *****/
+@media screen and (max-width: 1000px){ 
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+        .iconos_footer {
+        grid-template-columns: repeat(1, 1fr);
+        width: 1000px;
+    }
+    .tyc_footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/***** MOBILE *****/
+@media screen and (max-width: 580px){ 
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .iconos_footer {
+        grid-template-columns: repeat(1, 1fr);
+        width: 380px;
+    }
+    .tyc_footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
