@@ -1,5 +1,6 @@
 * {
     font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 .logo_clarin {
     width: 120px;
@@ -19,6 +20,9 @@
 a {
     text-decoration: none;
     color: rgb(65, 64, 64);
+}
+p {
+    padding-left: 22px;
 }
 .boton_lee_diario {
     width: 180px;
@@ -55,6 +59,7 @@ a {
     text-decoration: underline !important;
 }
 .inf_fiscal {
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     gap: 15px;
